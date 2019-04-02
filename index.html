@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Will I get to it today?</title>
+    <style>
+      html {
+        align-items: center;
+        display: flex;
+        font: bold 20vmin/1.1 system-ui,Segoe UI,Helvetica,Arial,sans-serif;
+        height: 100%;
+        justify-content: center;
+      }
+    </style>
+    <script type="text/javascript">
+      var answers = [
+        'Yeah, I don\'t think so.',
+        'Do bears poop in the woods?',
+        'What\'s in it for me?',
+        'The fact that you\'re asking me is a sign that you already know the answer.',
+        'I suppose anything is possible',
+        'Can\'t see that happening',
+        'Are you crazy?',
+        'Absolutely not',
+        'Yeah I guess',
+        'Who knows. Do you?',
+        'I\'ll tell you tomorrow',
+      ];
+
+      var answer = function() {
+        document.body.innerHTML = answers[Math.floor(Math.random()*answers.length)];
+      };
+    </script>
+  </head>
+  <body onload="answer()">
+  </body>
+</html>
